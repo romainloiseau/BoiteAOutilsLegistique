@@ -1,0 +1,119 @@
+intro:
+  _target_: streamlit.markdown
+  body: "# 🏢 Gestion du droit européen"
+
+tool_choice:
+  _target_: streamlit.selectbox
+  label: "Choisissez l'outil à utiliser"
+  index: null
+  options:
+    "📄 Résumé du texte européen": "summary_eu"
+    "🔍 Projection des articles": "projection_eu"
+    "⚖️ Analyse de l'impact sur le droit français": "impact_analysis_of_eu_on_fr"
+    "📊 Tableau de transposition": "transposition_table"
+
+spinner_tool:
+  _target_: streamlit.spinner
+  text: "Analyse des données en cours..."
+
+which_text:
+  _target_: streamlit.selectbox
+  label: "Importer un nouveau texte ou charger un texte existant"
+  index: null
+  options:
+    "🆕 Importer un nouveau texte": "import_new_eu_text"
+    "🔄 Charger un texte existant": "load_existing_eu_text"
+
+row_buttons:
+  show_text:
+    _target_: streamlit.button
+    label: "👁 Voir le contenu du texte dans ```streamlit```"
+  download_csv:
+    _target_: streamlit.download_button
+    label: "📥 Télécharger au format ```.csv```"
+    file_name: ".csv"
+  download_txt:
+    _target_: streamlit.download_button
+    label: "📥 Télécharger au format ```.txt```"
+    file_name: ".txt"
+  download_html:
+    _target_: streamlit.download_button
+    label: "📥 Télécharger au format ```.html```"
+    file_name: ".html"
+
+existing:
+  folder:
+    _target_: streamlit.selectbox
+    label: "Texte déjà traité"
+    index: null
+    placeholder: "Séléctionner un texte"
+    options: null
+
+new:
+  type:
+    _target_: streamlit.selectbox
+    label: "Type de texte"
+    placeholder: "Séléctionner une valeur"
+    index: null
+    options:
+      "🔗 Lien vers un texte": "import_new_eu_text_from_id"
+      "📤 Uploader un texte": "import_new_eu_text_from_upload"
+
+  existing_project_name:
+    _target_: streamlit.warning
+    body: "Le nom de projet existe déjà"
+    icon: "⚠️"
+    
+  invalid_project_name:
+    _target_: streamlit.warning
+    body: "Vous devez entrer un nom de projet valide"
+    icon: "⚠️"
+    
+  invalid_text:
+    _target_: streamlit.warning
+    body: "Le texte est invalide. Veuillez vérifier le contenu du lien ou du document, et vérifier que les formules de début et de fin sont adaptées."
+    icon: "⚠️"
+
+  start_formula:
+    _target_: streamlit.text_input
+    label: "Fonction python définissant le début du texte. ```paragraph``` sera remplacé par le contenu de chaque paragraphe"
+    value: ${data.eu_text.start_formula}
+
+  end_formula:
+    _target_: streamlit.text_input
+    label: "Fonction python définissant la fin du texte. ```paragraph``` sera remplacé par le contenu de chaque paragraphe"
+    value: ${data.eu_text.end_formula}
+
+  project_name:
+    _target_: streamlit.text_input
+    label: "Nom du projet"
+    value: null
+    type: "default"
+
+  submit:
+    _target_: streamlit.form_submit_button
+    label: "Charger le texte"
+
+  spinner_analyzing:
+      _target_: streamlit.spinner
+      text: "Analyse du texte en cours..."
+
+  from_file:
+    file:
+      _target_: streamlit.file_uploader
+      label: "📥 Uploader un fichier"
+      type:
+        - ".docx"
+      accept_multiple_files: false
+
+  from_id:      
+    id:
+      _target_: streamlit.text_input
+      label: "Identifiant du texte. ```A trouver en haut de la page EUR-Lex, exemples : 52021PC0582, 32009L0138, 32019R2088, 32022L2464```"
+      value: null
+      type: "default"
+
+    invalid_url:
+      _target_: streamlit.warning
+      body: "L'identifiant du texte est invalide"
+      icon: "⚠️"

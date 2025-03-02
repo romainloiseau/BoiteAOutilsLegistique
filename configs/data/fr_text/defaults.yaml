@@ -1,0 +1,11 @@
+_target_: legaltoolbox.data.LegifranceData
+
+legifrance_api_key: ${perso.legifrance_api_key}
+legifrance_api_secret: ${perso.legifrance_api_secret}
+
+path: ${root_path}/legifrance
+
+code_names: null
+
+defaults:
+  - /data/defaults@

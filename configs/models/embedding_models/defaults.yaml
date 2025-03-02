@@ -1,0 +1,4 @@
+defaults:
+  - /embedding_model/openai-text-embedding-3-large@openai-text-embedding-3-large
+  - /embedding_model/openai-text-embedding-3-small@openai-text-embedding-3-small
+  - /embedding_model/ollama-bge-m3@bge-m3

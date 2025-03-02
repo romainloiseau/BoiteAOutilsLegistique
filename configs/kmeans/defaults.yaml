@@ -1,0 +1,7 @@
+_target_: sklearn.cluster.KMeans
+
+init: 'k-means++'
+random_state: 42
+n_init: 'auto'
+
+texts_per_clusters: 5

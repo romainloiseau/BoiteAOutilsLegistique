@@ -1,0 +1,6 @@
+_target_: sklearn.manifold.TSNE
+n_components: 2
+random_state: 42
+perplexity: 15
+learning_rate: 'auto'
+init: 'pca'

@@ -1,0 +1,13 @@
+defaults:
+  - /llm/openai-gpt-3-5-turbo@gpt-3-5-turbo
+  - /llm/openai-gpt-4o-mini@gpt-4o-mini
+  - /llm/ollama-llama3-1-8b@llama3-1-8b
+  - /llm/ollama-llama3-1-70b@llama3-1-70b
+  - /llm/ollama-gemma2-27b@gemma2-27b
+  - /llm/ollama-gemma2-9b@gemma2-9b
+  - /llm/ollama-mistral-7-2B@mistral-7-2B
+  - /llm/ollama-mixtral-47B@mixtral-47B
+  - /llm/ollama-llama3-8b@llama3-8b
+  - /llm/ollama-llama3-70b@llama3-70b
+  - /llm/ollama-stablelm2-1-6b@stablelm2-1-6b
+  - /llm/ollama-stablelm2-12b@stablelm2-12b

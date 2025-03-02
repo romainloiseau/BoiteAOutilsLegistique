@@ -1,0 +1,4 @@
+model: llama3:8b
+
+defaults:
+  - ollama-defaults

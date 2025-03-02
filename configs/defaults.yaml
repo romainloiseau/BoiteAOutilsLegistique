@@ -1,0 +1,23 @@
+root_path: data
+
+backend_url: None
+
+llm_temperature: 0
+
+llm: null
+embedding_model: null
+
+defaults:
+  - _self_
+  - perso/defaults
+  - models/defaults
+  - tsne/defaults
+  - kmeans/defaults
+  - interface/defaults
+  - data/fr_text/defaults
+  - data/eu_text/defaults
+  - assets/defaults
+  - prompts/defaults
+  - tools/defaults
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog

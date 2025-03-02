@@ -1,0 +1,3 @@
+k_relevant_articles_per_alinea: 10
+fetch_k_relevant_articles_per_alinea: 30
+top_percent: 0.05

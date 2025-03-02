@@ -1,0 +1,4 @@
+model: gpt-4-turbo
+
+defaults:
+  - openai-defaults

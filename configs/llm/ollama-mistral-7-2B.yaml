@@ -1,0 +1,4 @@
+model: mistral
+
+defaults:
+  - ollama-defaults

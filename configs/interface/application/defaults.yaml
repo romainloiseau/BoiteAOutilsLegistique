@@ -1,0 +1,41 @@
+summary_eu:
+  download_docx:
+    _target_: streamlit.download_button
+    label: "📥 Télécharger au format ```.docx```"
+    file_name: "clustering.docx"
+
+  confirm_run:
+    _target_: streamlit.checkbox
+    label: "🔥 Générer le résumé"
+    key: "confirm_run_summary"
+    value: false
+  
+  warning_computation_cost:
+    _target_: streamlit.markdown
+    body: "⚠️ **Attention :** Cette opération peut prendre du temps en fonction de la taille du texte et du nombre d'articles à transposer. En fonction de l'API choisie pour utiliser les LLMs, des coûts supplémentaires peuvent également s'appliquer."
+
+impact_analysis_of_eu_on_fr:
+  download_html:
+    _target_: streamlit.download_button
+    label: "📥 Télécharger au format ```.html```"
+    file_name: "impact_analysis.html"
+
+transposition_table:
+  download_docx:
+    _target_: streamlit.download_button
+    label: "📥 Télécharger au format ```.docx```"
+    file_name: "tableau_de_transpo.docx"
+
+  run_impact_analysis_first:
+    _target_: streamlit.markdown
+    body: "🚨 **Veuillez d'abord lancer l'analyse d'impact avant de générer le tableau de transposition.**"
+
+  confirm_run:
+    _target_: streamlit.checkbox
+    label: "🔥 Générer le tableau de transposition"
+    key: "confirm_run_transposition_table"
+    value: false
+  
+  warning_computation_cost:
+    _target_: streamlit.markdown
+    body: "⚠️ **Attention :** Cette opération peut prendre du temps en fonction de la taille du texte et du nombre d'articles à transposer. En fonction de l'API choisie pour utiliser les LLMs, des coûts supplémentaires peuvent également s'appliquer."

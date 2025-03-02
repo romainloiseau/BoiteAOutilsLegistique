@@ -1,0 +1,14 @@
+_target_: legaltoolbox.data.EUData
+
+id: null
+url: "https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:"
+
+path: ${root_path}/eu_text
+
+start_formula: "'ONT ADOPTÉ LA PRÉSENTE DIRECTIVE:' in paragraph"
+end_formula: "paragraph.startswith('Fait à') and (', le' in paragraph)"
+
+folder: null
+
+defaults:
+  - /data/defaults@

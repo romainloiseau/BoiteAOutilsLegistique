@@ -1,0 +1,9 @@
+_target_: langchain_community.embeddings.ollama.OllamaEmbeddings
+
+base_url: ${backend_url}
+
+temperature: ${llm_temperature}
+show_progress: True
+
+defaults:
+  - defaults

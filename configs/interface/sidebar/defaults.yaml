@@ -1,0 +1,35 @@
+welcome:
+  _target_: streamlit.markdown
+  body: "👤 Bienvenue dans la boite à outils légistique"
+
+pro_expander:
+  _target_: streamlit.expander
+  label: "Pro mode (_use at your own risks_)"
+  icon: "😎"
+
+llm_select:
+  _target_: streamlit.selectbox
+  label: "LLM"
+  options: ${models.llms}
+
+llm_submit:
+  _target_: streamlit.form_submit_button
+  label: "Change LLM"
+  
+embedding_model_select:
+  _target_: streamlit.selectbox
+  label: "Embedding model"
+  options: ${models.embedding_models}
+
+embedding_model_submit:
+  _target_: streamlit.form_submit_button
+  label: "Change embedding model"
+  
+credits:
+  _target_: streamlit.html
+  body: "<center>Built with ❤️ by <a href=https://romainloiseau.fr/>Romain Loiseau</a> (<a href='mailto:romain.loiseau@enpc.fr'>contact</a>)</center>"
+
+reset:
+  _target_: streamlit.button
+  label: "Reset"
+  type: "primary"

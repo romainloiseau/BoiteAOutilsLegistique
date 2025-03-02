@@ -1,0 +1,10 @@
+page_icon: "📖"
+page_title: "Boite à outils légistique"
+
+defaults:
+  - hello/defaults
+  - fr_text/defaults
+  - eu_text/defaults
+  - sidebar/defaults
+  - application/defaults
+  

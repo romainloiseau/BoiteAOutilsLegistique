@@ -1,0 +1,4 @@
+model: stablelm2:1.6b
+
+defaults:
+  - ollama-defaults

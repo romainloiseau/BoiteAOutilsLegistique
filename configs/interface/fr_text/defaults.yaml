@@ -1,0 +1,59 @@
+intro:
+  _target_: streamlit.markdown
+  body: "# 🐓 Gestion du droit français"
+
+tool_choice:
+  _target_: streamlit.selectbox
+  label: "Choisissez l'outil à utiliser"
+  index: null
+  options:
+    "🔍 Projection des articles": "projection_fr"
+
+row_buttons:
+  show_text:
+    _target_: streamlit.button
+    label: "👁 Voir le contenu du texte dans ```streamlit```"
+  download_csv:
+    _target_: streamlit.download_button
+    label: "📥 Télécharger au format ```.csv```"
+    file_name: ".csv"
+  download_json:
+    _target_: streamlit.download_button
+    label: "📥 Télécharger au format ```.json```"
+    file_name: ".json"
+    
+spinner_tool:
+  _target_: streamlit.spinner
+  text: "Analyse des données en cours..."
+
+type_choice:
+  _target_: streamlit.selectbox
+  label: "Focus sur une partie des articles"
+  index: null
+  options:
+    "Code":
+    "Partie":
+    "Livre":
+    "Titre":
+    "Chapitre":
+    "Section":
+    "Sous-section":
+
+code:
+  select:
+    _target_: streamlit.multiselect
+    label: "Choisissez le ou les codes à charger"
+    options: ${assets.fr_codes}
+
+  select_submit:
+    _target_: streamlit.form_submit_button
+    label: "Charger les codes"
+
+  select_error:
+    _target_: streamlit.warning
+    body: "Veuillez sélectionner au moins un code"
+    icon: "⚠️"
+
+  wait_for_text_loading:
+    _target_: streamlit.spinner
+    text: "Chargement des codes en cours..."

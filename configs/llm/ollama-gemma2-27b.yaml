@@ -1,0 +1,4 @@
+model: gemma2:27b
+
+defaults:
+  - ollama-defaults

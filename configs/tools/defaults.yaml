@@ -1,0 +1,6 @@
+
+
+defaults:
+  - analyse_impact/defaults
+  - transposition_table/defaults
+  - cluster_and_project/defaults

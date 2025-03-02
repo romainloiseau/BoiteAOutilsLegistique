@@ -1,0 +1,7 @@
+_target_: langchain_openai.ChatOpenAI
+
+openai_api_key: ${perso.openai_api_key}
+openai_organization: ${perso.openai_organization}
+
+defaults:
+  - defaults

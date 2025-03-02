@@ -1,0 +1,23 @@
+intro:
+  _target_: streamlit.markdown
+  body: "# 👋 Bienvenue dans la boite à outils légistique\n\nCette application a été développée pour simplifier l'analyse et la gestion des textes juridiques français et européens. Grâce à des modèles d'IA avancés, vous pourrez explorer, résumer et transposer des textes de loi facilement.\n\n## ⚙️ **Fonctionnalités principales** :\n\n📜 **Gestion des textes de loi** : Importez des textes législatifs français et européens depuis diverses sources (Legifrance, EUR-Lex) et visualisez le contenu de manière claire et organisée.\n\n🤖 **Analyse assistée par IA** : Utilisez des modèles de langage, comme GPT-3.5-turbo et GPT-4, pour analyser et résumer des articles de loi complexes.\n\n🛠️ **Transposition de textes** : Vérifiez la compatibilité des articles européens avec le droit français et identifiez les modifications législatives nécessaires.\n\n📥 **Téléchargement de données** : Exportez vos analyses sous divers formats (CSV, JSON, TXT, HTML) pour un usage ultérieur.\n\n## 🚀 Comment démarrer ?\n📂 **Sélectionnez un texte** : Choisissez parmi les textes français ou européens existants, ou importez-en de nouveaux.\n\n🔧 **Choisissez l'outil d'analyse** : Selon le type de texte, plusieurs outils s'offrent à vous, comme la projection d'articles ou le résumé d'un texte européen.\n⚡ **Lancez l'analyse** : Une fois l'outil choisi, l'application analysera automatiquement les articles sélectionnés et vous proposera des résumés, des suggestions de transposition ou d'autres analyses pertinentes.\n\n📊 **Téléchargez ou visualisez les résultats** : Consultez les résultats directement dans l'application ou téléchargez-les dans le format de votre choix (CSV, JSON, TXT, HTML).\n\nCette application est conçue pour être simple et intuitive 🎯, tout en offrant des capacités d'analyse puissantes pour répondre aux besoins des professionnels du droit.\n\nBonne utilisation ! 💼✨"
+
+fr_text:
+  expander:
+    _target_: streamlit.expander
+    label: "🐓 **Droit français déjà traité**"
+    expanded: False
+
+  show_content:
+    _target_: streamlit.checkbox
+    label: "Afficher le contenu"
+
+eu_text:
+  expander:
+    _target_: streamlit.expander
+    label: "🏢 **Droit européen déjà traité**"
+    expanded: False
+
+  show_content:
+    _target_: streamlit.checkbox
+    label: "Afficher le contenu"
