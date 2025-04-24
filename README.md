@@ -2,6 +2,10 @@
 
 Cette application a été développée pour simplifier l'analyse et la gestion des textes juridiques français et européens en utilisant des modèles d'IA avancés.
 
+## Démonstration vidéo
+
+[![YT](https://img.youtube.com/vi/WNIDH_OM2uQ/0.jpg)](https://www.youtube.com/watch?v=WNIDH_OM2uQ)
+
 ## ⚙️ Fonctionnalités principales
 
 - 📜 **Gestion des textes de loi** : Importez des textes législatifs français et européens depuis des sources telles que Legifrance et EUR-Lex, et visualisez-les de manière claire et organisée.
