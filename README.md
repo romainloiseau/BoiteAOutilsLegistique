@@ -4,7 +4,7 @@ Cette application a été développée pour simplifier l'analyse et la gestion d
 
 ## Démonstration vidéo
 
-[![YT](https://img.youtube.com/vi/WNIDH_OM2uQ/0.jpg)](https://www.youtube.com/watch?v=WNIDH_OM2uQ)
+[![YT](https://img.youtube.com/vi/WNIDH_OM2uQ/0.jpg)](https://www.youtube.com/watch?v=SarVrYOc--M)
 
 ## ⚙️ Fonctionnalités principales
 
